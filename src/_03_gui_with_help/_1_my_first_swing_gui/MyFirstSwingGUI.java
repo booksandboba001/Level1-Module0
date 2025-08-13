@@ -14,7 +14,18 @@ import javax.swing.JPanel;
 
 public class MyFirstSwingGUI {
 	public void run() {
-
+		JFrame asdf = new JFrame();
+		asdf.setVisible(true);
+		asdf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JPanel jkl=new JPanel();
+		JLabel asdfj= new JLabel();
+		asdfj.setText("Hello, how are you?");
+		asdf.add(jkl);
+		jkl.add(asdfj);
+		asdf.pack();
+		asdfj.setIcon(loadImage());
+		asdf.pack();
+		
 		// 1. Create and initialize an object of the JFrame class
 
 		// 2. Set your JFrame object to be visible

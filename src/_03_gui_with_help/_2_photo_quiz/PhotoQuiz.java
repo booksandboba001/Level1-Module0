@@ -22,7 +22,29 @@ public class PhotoQuiz {
 		quizWindow.setVisible(true);
 		// This will make sure the program exits when you close the window
 		quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+		String KiaAnd3 = "https://preview.redd.it/we-need-more-cap-art-v0-sznpi8l2s5z91.jpg?width=1236&format=pjpg&auto=webp&s=b2f44c93696954d4d7a4f5b8961b4a17c33afd92";
+		Component image = createImage(KiaAnd3);
+		quizWindow.add(image);
+		quizWindow.pack();
+		String question = JOptionPane.showInputDialog("What are these characters' names?");
+		if (question.equalsIgnoreCase("Captain 3 and Agent 3")) {
+			JOptionPane.showMessageDialog(null, "CORRECT");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "INCORRECT");
+		}
+		quizWindow.remove(image);
+		String Shiver = "https://tse1.mm.bing.net/th/id/OIP.QQCGGdm2mWEiuAkMyRzIsgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3";
+		Component picture = createImage(Shiver);
+		quizWindow.add(picture);
+		quizWindow.pack();
+		String questions = JOptionPane.showInputDialog("What group does this idol belong to?");
+		if (questions.equalsIgnoreCase("Deep Cut")) {
+			JOptionPane.showMessageDialog(null, "CORRECT");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "INCORRECT");
+		}
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address” )
