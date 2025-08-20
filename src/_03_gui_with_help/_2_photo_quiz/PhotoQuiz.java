@@ -34,13 +34,14 @@ public class PhotoQuiz {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
 		}
 		quizWindow.remove(image);
-		String Shiver = "https://tse1.mm.bing.net/th/id/OIP.QQCGGdm2mWEiuAkMyRzIsgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3";
+		String Shiver = "https://i.pinimg.com/736x/eb/ef/8a/ebef8a2985116ab284a353b0175da603.jpg";
 		Component picture = createImage(Shiver);
 		quizWindow.add(picture);
 		quizWindow.pack();
-		String questions = JOptionPane.showInputDialog("What group does this idol belong to?");
-		if (questions.equalsIgnoreCase("Deep Cut")) {
-			JOptionPane.showMessageDialog(null, "CORRECT");
+		quizWindow.setVisible(true);
+		String ask = JOptionPane.showInputDialog("What group does this idol belong to?");
+		if (ask.equalsIgnoreCase("Deep Cut")) {
+			JOptionPane.showMessageDialog(null,"CORRECT");
 		}
 		else {
 			JOptionPane.showMessageDialog(null, "INCORRECT");
